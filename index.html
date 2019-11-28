@@ -1,0 +1,286 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>Lodash</title>
+
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/league.css">
+
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="lib/css/monokai.css">
+	<link rel="icon" href="lib/images/Lodash.svg" />
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section>
+				<img style="height:300px;"
+					data-src="https://upload.wikimedia.org/wikipedia/en/thumb/6/6f/Lodash.svg/1200px-Lodash.svg.png" alt="lodash">
+				<h1>Lodash</h1>
+				<h6 style="color: yellow;">Choose the right tool.</h6>
+				<p>
+					<small>Created by <a href="https://github.com/BaturaAndrew">by Batura Andrei</a> </small>
+				</p>
+			</section>
+			<section>
+				<h3>Contents</h3>
+				<ol>
+					<li class="fragment visible current-fragment" data-fragment-index="0">What is LoDash.</li>
+					<li class="fragment visible" data-fragment-index="1">
+						What are the benefits of using Lodash.</li>
+					<li class="fragment visible" data-fragment-index="2">The relevance of LoDash after the introduction of ES6.
+					</li>
+					<li class="fragment" data-fragment-index="3">
+						When you should use Lodash and when it is really useful.</li>
+					<li class="fragment" data-fragment-index="4">
+						How to use.</li>
+					<li class="fragment" data-fragment-index="5">
+						Examples of using.</li>
+					<li class="fragment" data-fragment-index="6">
+						Conclusion.</li>
+				</ol>
+
+			</section>
+			<section>
+				<section>
+					<h3>What is LoDash and what benefits does it provide.</h3>
+				</section>
+				<section>
+					<p>Lodash is a JavaScript library which provides utility functions for common
+						programming tasks.</p>
+				</section>
+				<section>
+					<p>
+						Lodash is a
+						JavaScript
+						library that helps programmers write more concise and maintainable JavaScript.
+					</p>
+				</section>
+
+			</section>
+			<section>
+
+				<section>
+					<h3>Why Use Lodash When ES6 Is Available</h3>
+				</section>
+				<section>
+					<p>Lodash will remain popular, for it still has lots of useful features that
+						could improve the way of programming.
+					</p>
+				</section>
+				<section>
+					<p>
+						Most native equivalents are array methods, and will not work with objects.
+						If this functionality is needed and no object
+						method is provided, then Lodash is the better option.
+					</p>
+				</section>
+			</section>
+			<section>
+				<section>
+					<h3>Why Lodash?</h3>
+				</section>
+				<section>
+					<p>Lodash makes JavaScript easier by taking the hassle out of working with arrays,
+						numbers, objects, strings,
+						etc.
+					</p>
+				</section>
+
+				<section>
+					<p>High-speed cross-browser library</p>
+				</section>
+				<section>
+					<p>Possibility to import for usage the required function (module) only,
+						but not the complete library. <br>
+						Use the category command to pass comma separated categories of functions to
+						include in the build.</p>
+					<p>for example:</p>
+					<pre><code>lodash category=collection,function</code>	</pre>
+				</section>
+
+				<section>
+					<p>Allows build semantic data flows</p>
+				</section>
+
+				<section>
+					<p>Facilitates writing pure simple functions</p>
+				</section>
+
+				<section>
+					<p>Documentation is nice and concise</p>
+
+					<img data-src="lib/images/documentation.jpg" alt="documentation">
+				</section>
+				<section>
+					<p>Easy to start</p>
+				</section>
+			</section>
+
+
+			<section>
+				<section>
+					<h3>Installation</h3>
+					<p>In a browser:</p>
+					<pre><code><script src="lodash.js"></script></code>
+				</pre>
+					<p>Using npm:</p>
+					<pre><code>$ npm i -g
+$ npm i --save lodash</code>
+				</pre>
+				</section>
+
+			</section>
+
+			<section>
+
+
+				<section>
+					<h3>Examples</h3>
+					<ul>Lodash can be broken down into several main areas:
+						<li>Utilities</li>
+						<li>Function</li>
+						<li>String</li>
+						<li>Array</li>
+						<li>Collection</li>
+						<li>Object</li>
+						<li>Sequence</li>
+					</ul>
+				</section>
+
+				<section>
+					<h3>Examples</h3>
+					<h4>Work with Array</h4>
+				</section>
+
+				<section>
+					<h4 class="function">_.chunk(array, [size=1])</h4>
+					<p>Creates an array of elements split into groups the length of size. If array can't
+						be split evenly, the final chunk will be the remaining elements.</p>
+					<pre><code>_.chunk(['a', 'b', 'c', 'd'], 2);
+// => [['a', 'b'], ['c', 'd']]</code></pre>
+					<pre><code>_.chunk(['a', 'b', 'c', 'd'], 3);
+// => [['a', 'b', 'c'], ['d']]</code></pre>
+				</section>
+
+				<section>
+					<h4 class="function">_.compact(array)</h4>
+					<p>Creates an array with all falsey values removed. The values false, null, 0, "",
+						undefined, and NaN are falsey.</p>
+					<pre><code>_.compact([0, 1, false, 2, '', 3]);
+// => [1, 2, 3]</code></pre>
+				</section>
+
+
+				<section>
+					<h3>Examples</h3>
+					<h4>Work with Collection</h4>
+				</section>
+
+				<section>
+					<h4 class="function">_.filter(collection, [predicate=_.identity])</h4>
+					<p>Iterates over elements of collection, returning an array of all elements predicate
+						returns truthy for.</p>
+					<pre><code>var users = [
+{ 'user': 'barney', 'age': 36, 'active': true },
+{ 'user': 'fred',   'age': 40, 'active': false }];
+						 
+// The `_.matches` iteratee shorthand.
+_.filter(users, { 'age': 36, 'active': true });
+	// => objects for ['barney']
+						 
+// The `_.matchesProperty` iteratee shorthand.
+_.filter(users, ['active', false]);
+// => objects for ['fred']
+						 
+// The `_.property` iteratee shorthand.
+_.filter(users, 'active');
+// => objects for ['barney']
+</code></pre>
+				</section>
+
+				<section>
+					<h3>Examples</h3>
+					<h4>Utilities:</h4>
+					<pre><code class="function">_.isEqual(value, other)</code></pre>
+					<pre><code class="function">_.isNull(value)</code></pre>
+					<pre><code class="function">_.toArray({ 'a': 1, 'b': 2 });
+// => [1, 2]</code></pre>
+					<pre><code class="function">_.isEqual(value, other)</code></pre>
+				</section>
+
+				<section>
+					<h3>Examples</h3>
+					<h4>Function:</h4>
+					<h4 class="function">_.partial(func, [partials])</h4>
+					<p>Creates a function that invokes func with partials prepended to the arguments
+						it receives.</p>
+
+					<pre><code>function divide(a, b) {
+ return a / b;
+} 
+var half = _.partial(divide, _, 2);
+var invert = _.partial(divide, 1);
+</code></pre>
+				</section>
+
+			</section>
+
+
+			<section>
+				<h3>Conclusion</h3>
+				<ul>
+					<li>Lodash is still a great library with many useful features.
+					</li>
+					<li>Lodash adds great power to JavaScript language.
+					</li>
+					<li>One can write concise and efficient codes.
+					</li>
+					<li>Lodash is fully modularized.
+					</li>
+					<li>Most native array methods will not work with objects, so Lodash
+						in this case is the better option.
+					</li>
+
+				</ul>
+
+			</section>
+
+			<section>
+				<h3>Thank you for your attention</h3>
+			</section>
+		</div>
+	</div>
+
+	<script src="js/reveal.js"></script>
+
+	<script>
+		// More info about config & dependencies:
+		// - https://github.com/hakimel/reveal.js#configuration
+		// - https://github.com/hakimel/reveal.js#dependencies
+		Reveal.initialize({
+			dependencies: [
+				{ src: 'plugin/markdown/marked.js' },
+				{ src: 'plugin/markdown/markdown.js' },
+				{ src: 'plugin/notes/notes.js', async: true },
+				{ src: 'plugin/highlight/highlight.js', async: true }
+			]
+		});
+	</script>
+</body>
+
+</html>
