@@ -34,8 +34,44 @@ body {
   color: rgb(108, 187, 240);
 }
 
-.function {
-  color: burlywood !important;
+.reveal p {
+  font-size: 24px;
+  text-align: left;
+}
+
+.intro-slide {
+  display: flex !important;
+  /* justify-content: space-between; */
+}
+
+.intro-slide img {
+  margin-top: 0px !important;
+  margin-right: 50px !important;
+}
+
+.intro-slide__block .text {
+  text-align: right;
+  margin: 0;
+  line-height: 24px;
+}
+
+p.header {
+  text-align: center;
+  font-size: 1em;
+  color: #eee;
+  font-family: "League Gothic",
+    Impact,
+    sans-serif;
+  font-weight: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2);
+  word-wrap: break-word;
+}
+
+p.function {
+  color: burlywood;
+  font-size: 1em;
 }
 
 /*********************************************

@@ -27,25 +27,26 @@
 <body>
 	<div class="reveal">
 		<div class="slides">
-			<section>
+			<section class="intro-slide">
 				<img style="height:300px;"
 					data-src="https://upload.wikimedia.org/wikipedia/en/thumb/6/6f/Lodash.svg/1200px-Lodash.svg.png" alt="lodash">
-				<h1>Lodash</h1>
-				<h6 style="color: yellow;">Choose the right tool.</h6>
-				<p>
-					<small>Created by <a href="https://github.com/BaturaAndrew">by Batura Andrei</a> </small>
-				</p>
+				<div class="intro-slide__block">
+					<h1>Lodash</h1>
+					<h6 style="color: yellow;">Choose the right tool.</h6>
+					<p class="text">
+						<small>Created by <a href="https://github.com/BaturaAndrew">by Batura Andrei</a> </small>
+					</p>
+				</div>
+
 			</section>
 			<section>
 				<h3>Contents</h3>
 				<ol>
 					<li class="fragment visible current-fragment" data-fragment-index="0">What is LoDash.</li>
-					<li class="fragment visible" data-fragment-index="1">
-						What are the benefits of using Lodash.</li>
 					<li class="fragment visible" data-fragment-index="2">The relevance of LoDash after the introduction of ES6.
 					</li>
 					<li class="fragment" data-fragment-index="3">
-						When you should use Lodash and when it is really useful.</li>
+						What are the benefits of using Lodash.</li>
 					<li class="fragment" data-fragment-index="4">
 						How to use.</li>
 					<li class="fragment" data-fragment-index="5">
@@ -53,24 +54,17 @@
 					<li class="fragment" data-fragment-index="6">
 						Conclusion.</li>
 				</ol>
-
 			</section>
+
 			<section>
 				<section>
-					<h3>What is LoDash and what benefits does it provide.</h3>
+					<h3>What is LoDash.</h3>
 				</section>
 				<section>
-					<p>Lodash is a JavaScript library which provides utility functions for common
-						programming tasks.</p>
+					<p class="header">Lodash is a JavaScript library, which provides utility functions <br>
+						for common programming tasks, that helps programmers <br>
+						write more concise and maintainable JavaScript.<p>
 				</section>
-				<section>
-					<p>
-						Lodash is a
-						JavaScript
-						library that helps programmers write more concise and maintainable JavaScript.
-					</p>
-				</section>
-
 			</section>
 			<section>
 
@@ -78,16 +72,16 @@
 					<h3>Why Use Lodash When ES6 Is Available</h3>
 				</section>
 				<section>
-					<p>Lodash will remain popular, for it still has lots of useful features that
-						could improve the way of programming.
-					</p>
+					<p class="header">Lodash will remain popular, for it still has lots of useful features <br>
+						that could improve the way of programming.
+						<p>
 				</section>
 				<section>
-					<p>
-						Most native equivalents are array methods, and will not work with objects.
-						If this functionality is needed and no object
+					<p class="header">
+						Most native equivalents are array methods, and will not work with objects.<br>
+						If this functionality is needed and no object<br>
 						method is provided, then Lodash is the better option.
-					</p>
+						<p>
 				</section>
 			</section>
 			<section>
@@ -95,39 +89,38 @@
 					<h3>Why Lodash?</h3>
 				</section>
 				<section>
-					<p>Lodash makes JavaScript easier by taking the hassle out of working with arrays,
-						numbers, objects, strings,
-						etc.
-					</p>
+					<p class="header">Lodash makes JavaScript easier <br>
+						by taking the hassle out of working with arrays,numbers, objects, strings,etc.
+						<p>
 				</section>
 
 				<section>
-					<p>High-speed cross-browser library</p>
+					<p class="header">High-speed cross-browser library<p>
 				</section>
 				<section>
-					<p>Possibility to import for usage the required function (module) only,
+					<p class="header">Possibility to import for usage the required function (module) only, <br>
 						but not the complete library. <br>
-						Use the category command to pass comma separated categories of functions to
-						include in the build.</p>
-					<p>for example:</p>
-					<pre><code>lodash category=collection,function</code>	</pre>
+						Use the category command to pass comma separated categories of functions to<br>
+						include in the build.<p>
+							<p>for example:</p>
+							<pre><code>lodash category=collection,function</code>	</pre>
 				</section>
 
 				<section>
-					<p>Allows build semantic data flows</p>
+					<p class="header">Allows build semantic data flows<p>
 				</section>
 
 				<section>
-					<p>Facilitates writing pure simple functions</p>
+					<p class="header">Facilitates writing pure simple functions<p>
 				</section>
 
 				<section>
-					<p>Documentation is nice and concise</p>
+					<p class="header">Documentation is nice and concise<p>
 
-					<img data-src="lib/images/documentation.jpg" alt="documentation">
+							<img data-src="lib/images/documentation.jpg" alt="documentation">
 				</section>
 				<section>
-					<p>Easy to start</p>
+					<p class="header">Easy to start<p>
 				</section>
 			</section>
 
@@ -135,11 +128,11 @@
 			<section>
 				<section>
 					<h3>Installation</h3>
-					<p>In a browser:</p>
-					<pre><code><script src="lodash.js"></script></code>
+					<p class="header">In a browser:<p>
+							<pre><code><script src="lodash.js"></script></code>
 				</pre>
-					<p>Using npm:</p>
-					<pre><code>$ npm i -g
+							<p class="header">Using npm:<p>
+									<pre><code>$ npm i -g
 $ npm i --save lodash</code>
 				</pre>
 				</section>
@@ -162,40 +155,98 @@ $ npm i --save lodash</code>
 					</ul>
 				</section>
 
+				<!-- Utilities -->
 				<section>
-					<h3>Examples</h3>
-					<h4>Work with Array</h4>
+					<h3>Examples. Utilities</h3>
+					<p>For simplifying common programming tasks such as determining type as well as simplifying math operations
+					</p>
+					<p>Performs a deep comparison between two values to determine if they are equivalent.</p>
+					<pre><code class="function">_.isEqual(value, other)</code></pre>
+					<p>Checks if value is null.</p>
+					<pre><code class="function">_.isNull(value)</code></pre>
+					<p>Converts value to an array.</p>
+					<pre><code class="function">_.toArray({ 'a': 1, 'b': 2 }); // => [1, 2]</code></pre>
+				</section>
+
+				<!-- Function -->
+				<section>
+
+					<h3>Examples. Function</h3>
+					<p>For simplifying binding, decorating, constraining, throttling, debouncing, currying</p>
+					<p class="function">_.partial(func, [partials])<p>
+							<p>Creates a function that invokes func with partials prepended to the arguments
+								it receives.</p>
+
+							<pre><code>function divide(a, b) {
+ return a / b;
+} 
+var half = _.partial(divide, _, 2);
+var invert = _.partial(divide, 1);
+				</code></pre>
+				</section>
+
+				<!-- String -->
+				<section>
+
+					<h3>Examples. String</h3>
+					<p>For conversion functions for performing basic string operations, such as trimming, converting to uppercase,
+						camel case, etc.</p>
+					<p class="function">_.snakeCase([string=''])<p>
+							<p>Converts string to snake case.</p>
+							<pre><code>_.snakeCase('Foo Bar');
+// => 'foo_bar'
+
+_.snakeCase('fooBar');
+// => 'foo_bar'
+
+_.snakeCase('--FOO-BAR--');
+// => 'foo_bar'</code></pre>
+				</section>
+
+
+				<!-- Array -->
+				<section>
+					<h3>Examples. Work with Array</h3>
+					<p>For creating, splitting, combining, modifying, and compressing</p>
 				</section>
 
 				<section>
-					<h4 class="function">_.chunk(array, [size=1])</h4>
-					<p>Creates an array of elements split into groups the length of size. If array can't
-						be split evenly, the final chunk will be the remaining elements.</p>
-					<pre><code>_.chunk(['a', 'b', 'c', 'd'], 2);
+					<p class="function">_.chunk(array, [size=1])<p>
+							<p>Creates an array of elements split into groups the length of size. If array can't
+								be split evenly, the final chunk will be the remaining elements.</p>
+							<pre><code>_.chunk(['a', 'b', 'c', 'd'], 2);
 // => [['a', 'b'], ['c', 'd']]</code></pre>
-					<pre><code>_.chunk(['a', 'b', 'c', 'd'], 3);
+							<pre><code>_.chunk(['a', 'b', 'c', 'd'], 3);
 // => [['a', 'b', 'c'], ['d']]</code></pre>
 				</section>
 
 				<section>
-					<h4 class="function">_.compact(array)</h4>
-					<p>Creates an array with all falsey values removed. The values false, null, 0, "",
-						undefined, and NaN are falsey.</p>
-					<pre><code>_.compact([0, 1, false, 2, '', 3]);
+					<p class="function">_.compact(array)<p>
+							<p>Creates an array with all falsey values removed. The values false, null, 0, "",
+								undefined, and NaN are falsey.</p>
+							<pre><code>_.compact([0, 1, false, 2, '', 3]);
 // => [1, 2, 3]</code></pre>
 				</section>
 
-
 				<section>
-					<h3>Examples</h3>
-					<h4>Work with Collection</h4>
+					<p class="function">_.compact(array)<p>
+							<p>Creates an array with all falsey values removed. The values false, null, 0, "",
+								undefined, and NaN are falsey.</p>
+							<pre><code>_.compact([0, 1, false, 2, '', 3]);
+// => [1, 2, 3]</code></pre>
+				</section>
+
+				<!-- Collection -->
+				<section>
+					<h3>Examples. Work with Collection</h3>
+					<p>iterating, sorting, filtering, splitting, and building</p>
 				</section>
 
 				<section>
-					<h4 class="function">_.filter(collection, [predicate=_.identity])</h4>
-					<p>Iterates over elements of collection, returning an array of all elements predicate
-						returns truthy for.</p>
-					<pre><code>var users = [
+					<p class="function">_.filter(collection, [predicate=_.identity])<p>
+							<p>Iterates over elements of collection, returning an array of all elements predicate
+								returns truthy for.</p>
+							<pre><code>var users = [
 { 'user': 'barney', 'age': 36, 'active': true },
 { 'user': 'fred',   'age': 40, 'active': false }];
 						 
@@ -213,29 +264,23 @@ _.filter(users, 'active');
 </code></pre>
 				</section>
 
+				<!-- Object -->
 				<section>
 					<h3>Examples</h3>
-					<h4>Utilities:</h4>
-					<pre><code class="function">_.isEqual(value, other)</code></pre>
-					<pre><code class="function">_.isNull(value)</code></pre>
-					<pre><code class="function">_.toArray({ 'a': 1, 'b': 2 });
-// => [1, 2]</code></pre>
-					<pre><code class="function">_.isEqual(value, other)</code></pre>
+					<p class="header">Work with Object<p>
+							<p>accessing, extending, merging, defaults, and transforming</p>
 				</section>
-
 				<section>
-					<h3>Examples</h3>
-					<h4>Function:</h4>
-					<h4 class="function">_.partial(func, [partials])</h4>
-					<p>Creates a function that invokes func with partials prepended to the arguments
-						it receives.</p>
+					<p class="function">_.omit(object, [paths])<p>
+							<p>this method creates an object composed of the own and inherited enumerable property paths of object
+								that
+								are not
+								omitted.</p>
 
-					<pre><code>function divide(a, b) {
- return a / b;
-} 
-var half = _.partial(divide, _, 2);
-var invert = _.partial(divide, 1);
-</code></pre>
+							<pre><code>var object = { 'a': 1, 'b': '2', 'c': 3 };
+							
+_.omit(object, ['a', 'c']);
+// => { 'b': '2' }</code></pre>
 				</section>
 
 			</section>
